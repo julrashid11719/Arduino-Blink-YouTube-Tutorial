@@ -10,17 +10,16 @@ Arduino Tutorial - LED Blink / Code Included
 void setup()
 {
 //Initializes pin 8 and 7 as outputs
-  pinMode(Red,OUTPUT);
-  pinMode(Green,OUTPUT);
+  pinMode(13,OUTPUT);
+ 
 }
 
 void loop()
 {
 //Blinking
-  digitalWrite(Red,HIGH); //Red on
-  digitalWrite(Green,LOW); //Green off
-  delay(500); //Wait half a second
-  digitalWrite(Red,LOW); //Red off
-  digitalWrite(Green,HIGH); //Green on
-  delay(500); //Wait half a second
+  digitalWrite(13,HIGH); //Red on
+  delay(500);
+  digitalWrite(13, LOW);
+  delay(500);
 }
+
